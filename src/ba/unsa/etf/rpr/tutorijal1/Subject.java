@@ -22,12 +22,19 @@ public abstract class Subject {
     public String getResponsibleTeacher() { return responsibleTeacher; }
 
     public void enrollStudents(Student student){
+        List<Student> student1 = new Student<>();
+        for(Student student2: enrolledStudents){
+            
+
+        }
     }
     public void deleteStudents(int index){
+        for(Student student : enrolledStudents){
+            if(student==)
+        }
 
     }
     public String printStudents(){
-        String no="mee";
-        return no;
+
     }
 }
