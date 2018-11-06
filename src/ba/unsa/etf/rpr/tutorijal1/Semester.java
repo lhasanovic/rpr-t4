@@ -28,4 +28,5 @@ public class Semester {
     void enrollStudents(Student student, List<String> electoralSubjects){
 
     }
+
 }

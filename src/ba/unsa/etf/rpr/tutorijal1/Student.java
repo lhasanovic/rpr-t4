@@ -4,7 +4,7 @@ public class Student {
    private String firstName;
     private String lastName;
     private int index;
-    private int numberOfECTSPoints=0;
+    int numberOfECTSPoints=0;
 
     public Student(String firstName,String lastName) {
         this.firstName = firstName;
@@ -23,22 +23,21 @@ public class Student {
         return firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
+    public String getLastName() { return lastName; }
 
-    public int getNumberOfECTSPoints() {
-        return numberOfECTSPoints;}
+    public int getNumberOfECTSPoints() { return numberOfECTSPoints;}
 
-        public int increasePoints(int a){
-        return 0;
+    public int increasePoints(int points){
+        return numberOfECTSPoints+=points;
         }
-    public int decreasePoints(int a){
-        return 0;
+
+    public int decreasePoints(int points){
+        return numberOfECTSPoints-=points;
     }
+
     public String toString(){
-        String no="meee";
-        return no;
+
+        return firstName + ' ' + lastName + ' ' +Integer.toString(index) + ' ' + Integer.toString(numberOfECTSPoints);
     }
 
 }

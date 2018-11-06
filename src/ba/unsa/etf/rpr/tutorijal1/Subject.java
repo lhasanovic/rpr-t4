@@ -13,21 +13,14 @@ public abstract class Subject {
         this.numberOfECTSPoints = numberOfECTSPoints;
     }
 
-    public List<Student> getEnrolledStudents() {
-        return enrolledStudents;
-    }
+    public List<Student> getEnrolledStudents() { return enrolledStudents; }
 
-    public int getNumberOfECTSPoints() {
-        return numberOfECTSPoints;
-    }
+    public int getNumberOfECTSPoints() { return numberOfECTSPoints; }
 
-    public String getSubjactName() {
-        return subjactName;
-    }
+    public String getSubjactName() { return subjactName; }
 
-    public String getResponsibleTeacher() {
-        return responsibleTeacher;
-    }
+    public String getResponsibleTeacher() { return responsibleTeacher; }
+
     public void enrollStudents(Student student){
     }
     public void deleteStudents(int index){
