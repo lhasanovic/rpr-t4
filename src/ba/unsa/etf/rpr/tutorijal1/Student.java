@@ -1,43 +1,26 @@
 package ba.unsa.etf.rpr.tutorijal1;
 
 public class Student {
-   private String firstName;
+    private String firstName;
     private String lastName;
-    private int index;
-    int numberOfECTSPoints=0;
-
-    public Student(String firstName,String lastName) {
+    private Integer index;
+    private int numberOfECTSPoints = 0;
+    public Student(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
-    public int getIndex() {
-        return index;
+    public void setIndex(Integer index){ this.index = index; }
+    public Integer getIndex() { return this.index; }
+    public void increasePoints(int points){ this.numberOfECTSPoints += points; }
+    public int getNumberOfECTSPoints() { return this.numberOfECTSPoints; }
+    public String getFirstName() { return this.firstName; }
+    public String getLastName() { return this.lastName; }
+    public void decreasePoints(int points){
+        numberOfECTSPoints -= points;
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " " + Integer.toString(index) + " " + Integer.toString(numberOfECTSPoints);
     }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() { return lastName; }
-
-    public int getNumberOfECTSPoints() { return numberOfECTSPoints;}
-
-    public int increasePoints(int points){
-        return numberOfECTSPoints+=points;
-        }
-
-    public int decreasePoints(int points){
-        return numberOfECTSPoints-=points;
-    }
-
-    public String toString(){
-
-        return firstName + ' ' + lastName + ' ' +Integer.toString(index) + ' ' + Integer.toString(numberOfECTSPoints);
-    }
-
 }
